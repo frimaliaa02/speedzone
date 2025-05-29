@@ -9,3 +9,4 @@ Route::get('/', function () {
 
 
 Route::get('/listproduk', [ListProdukController::class, 'show']);
+Route::post('/simpan-produk', [ListProdukController::class, 'simpan'])->name('produk.simpan');
